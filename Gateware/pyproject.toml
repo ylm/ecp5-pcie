@@ -1,0 +1,20 @@
+
+[project]
+name = "ecp5_pcie"
+version = "0.0.1"
+description = "PCIe interface for the ECP5 FPGA in amaranth"
+readme = "README.md"
+requires-python = "~=3.7"
+dependencies = [
+    "amaranth",
+]
+
+[project.urls]
+Homepage = "https://github.com/ECP5-PCIe/ECP5-PCIe"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.resolution.overrides]
+markupsafe = "2.0.1"
